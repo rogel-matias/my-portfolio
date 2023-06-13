@@ -1,0 +1,45 @@
+.home {
+  text-transform: uppercase;
+
+  &__title {
+    font-family: var(--titular-font);
+    font-size: 8rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+  }
+
+  &__subtitle {
+    font-family: var(--titular-font);
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 8rem;
+  }
+
+  &__ul {
+    padding: 1rem;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__li {
+    margin: 0 1rem;
+  }
+
+  &__a {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      border-color: black;
+      background-color: black;
+      color: #fcfcfc;
+      transform: scale(1.2);
+      transition: all 0.3s;
+    }
+  }
+}

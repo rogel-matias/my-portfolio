@@ -1,0 +1,30 @@
+.header {
+  max-width: 100%;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__nav {
+    max-width: 28rem;
+    padding: 0.5rem 0.2rem;
+    margin: 1rem 0;
+  }
+
+  &__ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  &__li {
+    margin: 0 1rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+
+    &:hover {
+      scale: 1.02;
+      color: red;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.wrapper {
+  background-color: #fcfcfc;
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--titular-font);
+}
+
+.section {
+  max-width: 90rem;
+  min-height: 93vh;
+  background-color: #fcfcfc;
+  padding: 2rem;
+
+  margin: auto;
+
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+  }
+}

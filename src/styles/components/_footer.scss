@@ -1,0 +1,16 @@
+.footer {
+  width: 100%;
+  background-color: chartreuse;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  &__icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-color: rgb(45, 64, 231);
+  }
+}

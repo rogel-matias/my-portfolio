@@ -1,0 +1,16 @@
+.projects {
+
+  &__grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
+    gap: 10px;
+  }
+
+  &__project {
+    width: 100%;
+    min-height: 25vw;
+    background-color: azure;
+  }
+}
