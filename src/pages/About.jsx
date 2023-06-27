@@ -1,19 +1,34 @@
+import { Link } from "react-router-dom";
+
 export default function About () {
   return(
-    <section className="section">
-      <h2 className="section__title about">Sobre mi</h2>
-      <p className="about__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Quisquam consequatur a sit, natus soluta, vero possimus provident ab eveniet quam dignissimos nam temporibus iusto eligendi, eius porro. 
-        Id, facilis sit? Repellat expedita labore eaque cupiditate obcaecati corrupti consectetur veniam maxime cumque, odit impedit voluptatem culpa, 
-        molestias minus nesciunt nihil eius sint sit debitis blanditiis tempore mollitia? Corrupti nulla voluptatum ea!
-      </p>
-      <p className="about__text">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Quisquam consequatur a sit, natus soluta, vero possimus provident ab eveniet quam dignissimos nam temporibus iusto eligendi, eius porro. 
-        Id, facilis sit? Repellat expedita labore eaque cupiditate obcaecati corrupti consectetur veniam maxime cumque, odit impedit voluptatem culpa, 
-        molestias minus nesciunt nihil eius sint sit debitis blanditiis tempore mollitia? Corrupti nulla voluptatum ea!
-      </p>
+    <section className="section about">
+      <h2 className="section__title">Sobre mi</h2>
+      <div className="about__container">
+        <div className="about__text">
+          <p>
+            Mucho gusto! Tengo 27 años y soy de Entre Rios, Argentina. 
+            Al terminar el colegio por el año 2013 comence mis estudios en Ingenieria Agropecuaria hasta el 2021,
+            donde comencé mi historia con la Programación y a la cual apuesto como presente y futuro en mi vida.    
+          </p>
+          <p>
+            Actualmente me encuentro catalogado como Frontend Developer especializado en React JS.
+            Busco oportunidades laborales y proyectos donde pueda contribuir con mis habilidades y seguir aprendiendo
+            para desarrollarme aún más como profesional.
+          </p>
+          <p>
+            Saliendo un poco del codigo, me gusta entrenar y jugar videojuegos en mi tiempo libre. 
+            Tengo una fuerte debilidad por las mascotas, especialmente por los perros (tengo 4).
+          </p>
+          <p>
+            ¡Ante cualquier duda no dudes en <Link to='/contact'><span>contactarme</span></Link>!
+          </p>
+        </div>
+        <div className='about__aside'>
+          <img className='about__image' src="src/assets/about/my-photo.png"/>
+          <button className='about__button'>MI CV</button>
+        </div>
+      </div>
     </section>
   )
 }

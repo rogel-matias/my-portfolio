@@ -1,5 +1,7 @@
 .home {
   text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
 
   &__title {
     font-family: var(--titular-font);
@@ -39,7 +41,7 @@
       background-color: black;
       color: #fcfcfc;
       transform: scale(1.2);
-      transition: all 0.3s;
+      transition: all .3s;
     }
   }
 }
