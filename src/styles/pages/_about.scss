@@ -1,9 +1,8 @@
 .about {
   justify-content: space-between;
 
-
   &__container {
-    margin: 0 0 2rem;
+    margin: 0 0 1rem;
 
     display: flex;
     flex-flow: row wrap;
@@ -20,6 +19,17 @@
       max-width: 50rem;
       margin-bottom: 1.4rem;
       line-height: 1.9rem;
+
+      span {
+        font-family: var(--principal-font);
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
     }
   }
 

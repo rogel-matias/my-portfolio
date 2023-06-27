@@ -1,14 +1,44 @@
 const ICONS = {
-  github: 'src/assets/rrss/github.svg',
-  linkedin: 'src/assets/rrss/linkedin.svg',
-  whatsapp: 'src/assets/rrss/whatsapp.svg',
-  javascript: 'src/assets/rrss/javascript.svg',
-  react: 'src/assets/rrss/react.svg',
-  sass: 'src/assets/rrss/sass.svg',
-  html: 'src/assets/rrss/html5.svg',
-  css: 'src/assets/rrss/css3.svg',
-  bootstrap: 'src/assets/rrss/bootstrap.svg',
-  fire: 'src/assets/rrss/fire.svg',
+  github: {
+    svg: 'src/assets/rrss/svg/github.svg',
+    alt: 'github'
+  },
+  linkedin: {
+    svg: 'src/assets/rrss/svg/linkedin.svg',
+    alt: 'linkedin'
+  },
+  whatsapp: {
+    svg: 'src/assets/rrss/svg/whatsapp.svg',
+    alt: 'whatsapp'
+  },
+  javascript: {
+    svg: 'src/assets/rrss/svg/javascript.svg',
+    alt: 'javascript'
+  },
+  react: {
+    svg: 'src/assets/rrss/svg/react.svg',
+    alt: 'react'
+  },
+  sass: {
+    svg: 'src/assets/rrss/svg/sass.svg',
+    alt: 'sass'
+  },
+  html: {
+    svg: 'src/assets/rrss/svg/html5.svg',
+    alt: 'html5'
+  },
+  css: {
+    svg: 'src/assets/rrss/svg/css3.svg',
+    alt: 'css3'
+  },
+  bootstrap: {
+    svg: 'src/assets/rrss/svg/bootstrap.svg',
+    alt: 'bootstrap'
+  },
+  fire: {
+    svg: 'src/assets/rrss/svg/fire.svg',
+    alt: 'fire'
+  },
 }
 
 
@@ -19,8 +49,12 @@ export const data = {
       title: 'Tu Giffy',
       img: '/src/assets/projects/tu-giffy.png',
       description: {
-        text: 'Buscador de gifs con register/login, opción de añadir favoritos, clasificar por edad y revisar tendencias. Para esto me he servido de la API de Giphy',
+        text: 'Web buscador de gifs con register/login, función de añadir favoritos, clasificar por edad y revisar tendencias. Para esto me he servido de la API de Giphy. Algunas dependencias: React Helmet, Formik, Wouter.',
         icons: [
+          ICONS.html,
+          ICONS.css,
+          ICONS.react,
+          ICONS.fire,
         ]
       },
       url: {
@@ -33,8 +67,12 @@ export const data = {
       title: 'El Tente',
       img: 'src/assets/projects/el-tente.png',
       description: {
-        text: 'Mi primer proyecto profesional para un cliente dedicado a una empresa de branding, fotografía, diseño y video. Web con formulario manejado con Formik y enviado partir del servicio Email JS.',
-        icons: []
+        text: 'Mi primer proyecto profesional para un cliente dedicado a una empresa de branding, fotografía, diseño y video. Contiene formulario manejado con Formik y enviado partir del servicio Email JS, React Helmet, Toastify, etc.',
+        icons: [
+          ICONS.html,
+          ICONS.sass,
+          ICONS.react,
+        ]
       },
       url: {
         deploy: 'www.eltente.com'
@@ -46,7 +84,12 @@ export const data = {
       img: 'src/assets/projects/tu-tabaco.png',
       description: {
         text: 'E-commerce tabaquería estilado con la librería Tailwind CSS. Contiene manejo de base de datos a partir de Firebase, carrito de compras, clasificación de mercadería, manejo de stock y más.',
-        icons: []
+        icons: [
+          ICONS.html,
+          ICONS.css,
+          ICONS.react,
+          ICONS.fire,
+        ]
       },
       url: {
         github: '',
@@ -58,8 +101,12 @@ export const data = {
       title: 'Open Drink Store',
       img: 'src/assets/projects/open-drink-store.png',
       description: {
-        text: 'E-commerce de bebidas realizado con Javascript Vanilla. Contiene carrito de compras, posibilidad de eliminar productos del mismo, manejo de stock, etc.',
-        icons: []
+        text: 'E-commerce de bebidas realizado con HTML, CSS, Javascript Vanilla y LocalStorage para el guardado de datos. Contiene carrito de compras, posibilidad de eliminar productos del mismo, manejo de stock y demás característica.',
+        icons: [
+          ICONS.html,
+          ICONS.css,
+          ICONS.react,
+        ]
       },
       url: {
         github: '',
@@ -72,7 +119,11 @@ export const data = {
       img: '../src/assets/projects/joyeria-gold.png',
       description: {
         text: 'Web estática de tienda de joyerías realizada con HTML y SASS. Fué mi primer proyecto como developer donde entendí que comenzaba la pasión.',
-        icons: []
+        icons: [
+          ICONS.html,
+          ICONS.sass,
+          ICONS.bootstrap,
+        ]
       },
       url: {
         github: '',

@@ -1,5 +1,5 @@
-import Github from '../assets/rrss/Github'
-import Fire from '../assets/rrss/Fire'
+import Github from '../assets/rrss/components/Github'
+import Fire from '../assets/rrss/components/Fire'
 
 /* eslint-disable react/prop-types */
 export default function Project ({ project }) {
@@ -14,7 +14,7 @@ export default function Project ({ project }) {
             <h4>Tecnologías</h4>
             <div>
             {
-              project.description.icons.map(icon => <img key={icon} src={icon} />)
+              project.description.icons.map(icon => <img key={icon} src={icon.svg} alt={icon.alt} />)
             }
             </div>
           </div>

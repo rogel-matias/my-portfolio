@@ -1,36 +1,70 @@
-.form {
-  width: 20rem;
-  background-color: antiquewhite;
-  padding: 0.5rem;
+.contact{
+  align-items: center;
 
-
-  &__label {
+  & .form {
     width: 100%;
-    margin: 1rem 0;
-  }
+    max-width: 22rem;
+    margin: 5rem 0 0;
 
-  &__input {
-    width: 95%;
-    padding: .5rem;
-    margin-top: 0.4rem;
-    border: 1px solid grey;
-  }
+    font-size: 1.2rem;
 
-  &__textarea {
-    max-width: 95%;
-    min-width: 95%;
-    min-height: 7rem;
-    max-height: 7rem;
-    padding: .5rem;
-    margin-top: 0.4rem;
-    border: 1px solid grey;
-  }
+    &__label {
+      width: 100%;
+      margin: 1rem 0;
+      
+      @include flex(column, nowrap, null, center, 0);
 
-  &__button {
-    width: 100%;
-    padding: .5rem;
-    background-color: black;
-    color: #fcfcfc;
-    cursor: pointer;
+      & span {
+        margin: 1rem 0 0;
+        font-weight: 600;
+      }
+    }
+
+    &__input {
+      width: 95%;
+      padding: .5rem;
+      border: none;
+      border-bottom: 1px solid grey;
+      text-align: center;
+
+      &:focus-visible {
+        outline: none;
+      }
+
+      &::placeholder {
+        text-align: center;
+      }
+    }
+
+    &__textarea {
+      max-width: 95%;
+      min-width: 95%;
+      min-height: 7rem;
+      max-height: 7rem;
+      padding: .5rem;
+      margin-top: 1rem;
+      border: 1px solid grey;
+      text-align: center;
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+
+    &__button {
+      width: 100%;
+      padding: .5rem;
+      background-color: black;
+      color: #fcfcfc;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(169, 0, 0);
+        color: rgb(252, 204, 204);
+        border: 2px solid rgb(169, 0, 0);
+
+        transition: color 1s ease;
+      }
+    }
   }
 }
