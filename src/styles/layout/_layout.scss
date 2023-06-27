@@ -11,8 +11,7 @@
   padding: 0 2rem;
   margin: auto;
 
-  display: flex;
-  flex-flow: column wrap;
+  @include flex(column, nowrap, null, center, 0);
 
   &__title {
     text-align: center;
@@ -23,6 +22,7 @@
   }
 
   &__paragraph {
+    max-width: 57rem;
     text-align: center;
     font-size: 1.4rem;
     font-weight: 400;

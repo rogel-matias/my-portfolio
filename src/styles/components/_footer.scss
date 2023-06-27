@@ -9,8 +9,16 @@
     align-items: center;
     gap: 6rem;
 
-    .rrss__icon:hover {
-      fill: red;
+    & a:nth-child(1) svg:hover {
+      fill: rgb(147, 1, 1);
+    }
+
+    & a:nth-child(2) svg:hover {
+      fill: rgb(1, 6, 164);
+    }
+
+    & a:nth-child(3) svg:hover {
+      fill: rgb(58, 173, 0);
     }
   }
 }

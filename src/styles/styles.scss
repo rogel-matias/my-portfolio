@@ -1,12 +1,12 @@
-/* Layout */
-
-@import './layout/layout';
-
 /* Format */
 
 @import './base/mixins';
 @import './base/reset';
 @import './base/settings';
+
+/* Layout */
+
+@import './layout/layout';
 
 /* Components */
 
