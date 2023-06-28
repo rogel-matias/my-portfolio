@@ -1,5 +1,5 @@
-import Github from '../public/assets/rrss/components/Github'
-import Fire from '../public/assets/rrss/components/Fire'
+import Github from '../assets/rrss/components/Github'
+import Fire from '../assets/rrss/components/Fire'
 
 /* eslint-disable react/prop-types */
 export default function Project ({ project }) {

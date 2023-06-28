@@ -1,6 +1,6 @@
-import Whatsapp from '../public/assets/rrss/components/Whatsapp'
-import Linkedin from '../public/assets/rrss/components/Linkedin'
-import Github from '../public/assets/rrss/components/Github'
+import Whatsapp from '../assets/rrss/components/Whatsapp'
+import Linkedin from '../assets/rrss/components/Linkedin'
+import Github from '../assets/rrss/components/Github'
 
 export default function Footer () {
   return (

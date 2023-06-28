@@ -47,7 +47,7 @@ export const data = {
     {
       id: 1,
       title: 'Tu Giffy',
-      img: 'src/public/assets/projects/tu-giffy.webp',
+      img: '/assets/projects/tu-giffy.webp',
       description: {
         text: 'Web buscador de gifs con register/login, función de añadir favoritos, clasificar por edad y revisar tendencias. Para esto me he servido de la API de Giphy. Algunas dependencias: React Helmet, Formik, Wouter.',
         icons: [
@@ -65,7 +65,7 @@ export const data = {
     {
       id: 2,
       title: 'El Tente',
-      img: 'src/public/assets/projects/el-tente.webp',
+      img: '/assets/projects/el-tente.webp',
       description: {
         text: 'Mi primer proyecto profesional para un cliente dedicado a una empresa de branding, fotografía, diseño y video. Contiene formulario manejado con Formik y enviado partir del servicio Email JS, React Helmet, Toastify, etc.',
         icons: [
@@ -81,7 +81,7 @@ export const data = {
     {
       id: 3,
       title: 'Tu Tabaco',
-      img: 'src/public/assets/projects/tu-tabaco.webp',
+      img: '/assets/projects/tu-tabaco.webp',
       description: {
         text: 'E-commerce tabaquería estilado con la librería Tailwind CSS. Contiene manejo de base de datos a partir de Firebase, carrito de compras, clasificación de mercadería, manejo de stock y más.',
         icons: [
@@ -99,7 +99,7 @@ export const data = {
     {
       id: 4,
       title: 'Open Drink Store',
-      img: 'src/public/assets/projects/open-drink-store.webp',
+      img: '/assets/projects/open-drink-store.webp',
       description: {
         text: 'E-commerce de bebidas realizado con HTML, CSS, Javascript Vanilla y LocalStorage para el guardado de datos. Contiene carrito de compras, posibilidad de eliminar productos del mismo, manejo de stock y demás característica.',
         icons: [
@@ -116,7 +116,7 @@ export const data = {
     {
       id: 5,
       title: 'Joyeria Gold',
-      img: 'src/public/assets/projects/joyeria-gold.webp',
+      img: '/assets/projects/joyeria-gold.webp',
       description: {
         text: 'Web estática de tienda de joyerías realizada con HTML y SASS. Fué mi primer proyecto como developer donde entendí que comenzaba la pasión.',
         icons: [
