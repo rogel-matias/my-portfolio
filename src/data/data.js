@@ -1,42 +1,42 @@
 const ICONS = {
   github: {
-    svg: 'src/public/assets/rrss/svg/github.svg',
+    svg: '/assets/rrss/svg/github.svg',
     alt: 'github'
   },
   linkedin: {
-    svg: 'src/public/assets/rrss/svg/linkedin.svg',
+    svg: '/assets/rrss/svg/linkedin.svg',
     alt: 'linkedin'
   },
   whatsapp: {
-    svg: 'src/public/assets/rrss/svg/whatsapp.svg',
+    svg: '/assets/rrss/svg/whatsapp.svg',
     alt: 'whatsapp'
   },
   javascript: {
-    svg: 'src/public/assets/rrss/svg/javascript.svg',
+    svg: '/assets/rrss/svg/javascript.svg',
     alt: 'javascript'
   },
   react: {
-    svg: 'src/public/assets/rrss/svg/react.svg',
+    svg: '/assets/rrss/svg/react.svg',
     alt: 'react'
   },
   sass: {
-    svg: 'src/public/assets/rrss/svg/sass.svg',
+    svg: '/assets/rrss/svg/sass.svg',
     alt: 'sass'
   },
   html: {
-    svg: 'src/public/assets/rrss/svg/html5.svg',
+    svg: '/assets/rrss/svg/html5.svg',
     alt: 'html5'
   },
   css: {
-    svg: 'src/public/assets/rrss/svg/css3.svg',
+    svg: '/assets/rrss/svg/css3.svg',
     alt: 'css3'
   },
   bootstrap: {
-    svg: 'src/public/assets/rrss/svg/bootstrap.svg',
+    svg: '/assets/rrss/svg/bootstrap.svg',
     alt: 'bootstrap'
   },
   fire: {
-    svg: 'src/public/assets/rrss/svg/fire.svg',
+    svg: '/assets/rrss/svg/fire.svg',
     alt: 'fire'
   },
 }
