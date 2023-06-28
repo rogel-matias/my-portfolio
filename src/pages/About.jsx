@@ -7,18 +7,17 @@ export default function About () {
       <div className="about__container">
         <div className="about__text">
           <p>
-            Mucho gusto! Tengo 27 años y soy de Entre Rios, Argentina. 
-            Al terminar el colegio por el año 2013 comence mis estudios en Ingenieria Agropecuaria hasta el 2021,
-            donde comencé mi historia con la Programación y a la cual apuesto como presente y futuro en mi vida.    
+            Mucho gusto! Tengo 27 años y soy de Entre Ríos, Argentina. 
+            Al terminar el colegio por el año 2013 comencé mis estudios en Ingeniería Agropecuaria hasta el 2021,
+            donde empezó mi historia con la programación y a la cual apuesto como presente y futuro en mi vida.    
           </p>
           <p>
-            Actualmente me encuentro catalogado como Frontend Developer especializado en React JS.
-            Busco oportunidades laborales y proyectos donde pueda contribuir con mis habilidades y seguir aprendiendo
-            para desarrollarme aún más como profesional.
+            Busco oportunidades laborales, proyectos donde pueda contribuir con mis habilidades y seguir aprendiendo
+            para desarrollarme como profesional dentro del mundo tecnológico.
           </p>
           <p>
-            Saliendo un poco del codigo, me gusta entrenar y jugar videojuegos en mi tiempo libre. 
-            Tengo una fuerte debilidad por las mascotas, especialmente por los perros (tengo 4).
+            Ampliando un poco sobre mí, tambien me gusta entrenar y jugar videojuegos en mi tiempo libre. 
+            Tengo una fuerte debilidad por las mascotas, especialmente por los perros.
           </p>
           <p>
             ¡Ante cualquier duda no dudes en <Link to='/contact'><span>contactarme</span></Link>!

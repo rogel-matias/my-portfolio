@@ -1,13 +1,19 @@
 .about {
-  justify-content: space-between;
 
   &__container {
-    margin: 0 0 1rem;
+    margin: 2rem 0 0;
 
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
+
+    @include dp() {
+      text-align: center;
+
+      flex-flow: column-reverse nowrap;
+      gap: 2rem;
+    }
   }
 
   &__text {
@@ -16,13 +22,20 @@
     font-weight: 500;
     margin: 0 3rem 0 0;
 
+    @include dp() {
+      margin: 0 0 2rem;
+    }
+
+    @include mb() {
+      width: 100%;
+    }
+
     p {
       max-width: 50rem;
       margin-bottom: 1.4rem;
       line-height: 1.9rem;
 
       span {
-        font-family: var(--principal-font);
         font-weight: 600;
         text-transform: uppercase;
 

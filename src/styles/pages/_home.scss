@@ -4,24 +4,47 @@
   align-items: center;
 
   &__title {
-    font-family: var(--titular-font);
+    font-family: $PlayFairDisplay;
     font-size: 8rem;
     font-weight: 600;
     margin-bottom: 6rem;
+    text-align: center;
+
+    @include dp() {
+      font-size: 12vw;
+    }
+
+    @include it() {
+      font-size: 18vw;
+      line-height: 16vw;
+      margin-bottom: 4rem;
+    }
   }
 
   &__subtitle {
-    font-family: var(--titular-font);
+    font-family: $PlayFairDisplay;
     font-size: 5rem;
     font-weight: 500;
     margin-bottom: 8rem;
+
+    @include dp() {
+      font-size: 7.5vw;
+      margin-bottom: 7vw;
+    }
   }
 
   &__ul {
+    text-align: center;
     padding: 1rem;
     margin-top: 2rem;
     display: flex;
     flex-flow: row wrap;
+
+    @include it() {
+      font-size: 3vw;
+      flex-flow: column nowrap;
+      gap: 1rem;
+    }
   }
 
   &__li {

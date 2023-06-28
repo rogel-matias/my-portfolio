@@ -1,6 +1,111 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap');
 
-:root {
-  --principal-font: 'Lato', sans-serif;
-  --titular-font: 'Playfair Display', serif;
+/*/ Imports Fonts /*/
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(/fonts/Lato/Lato-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/*/ Colors /*/
+
+
+/*/ Font Sizes /*/
+
+
+/*/ Fonts /*/
+
+$PlayFairDisplay: 'Playfair Display', serif;
+$Lato: 'Lato', sans-serif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// /*
+// Imports Fonts
+// */
+
+
+
+// @font-face {
+//   font-family: 'Mazius';
+//   src: url(/fonts/Mazius/Mazius-Extraitalic.otf);
+//   font-weight: normal;
+//   font-style: italic;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'MaziusReg';
+//   src: url(/fonts/Mazius/Mazius-Regular.otf);
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+// @font-face {
+//   font-family: 'Messapia';
+//   src: url(/fonts/Messapia-clt/Messapia-Regular.woff);
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+
+
+// /*
+// Colors
+// */
+
+// $text: #000;
+// $white: #fcfcfc;
+// $background: #F5F0E8;
+// $black: #1B1C19;
+// $hover: #3c3e37;
+// $verde: #657F46;
+// $rosa: #FFD3BB;
+// $beige: #EADECA;
+// $primary: #F5F0E8;
+
+// /*
+// Fonts
+// */
+
+// $SalmaLight: 'SalmaLight'; //Salma Light
+// $Messapia: 'Messapia'; //Messapia Regular
+// $Mazius: 'Mazius';
+// $MaziusReg: 'MaziusReg';
+
+// /*
+// Fonts Size
+// */
+
+// $titles: 3rem;
+// $subtitles: 2.5rem;
+// $others: 1.875rem;
+// $sections: 1.5rem;
+// $base: 1rem;

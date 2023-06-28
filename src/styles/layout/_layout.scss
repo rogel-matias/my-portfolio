@@ -2,13 +2,12 @@
   background-color: #fcfcfc;
   width: 100%;
   min-height: 100vh;
-  font-family: var(--principal-font);
+  font-family: $Lato;
 }
 
 .section {
   width: 88%;
   min-height: 87vh;
-  padding: 0 2rem;
   margin: auto;
 
   @include flex(column, nowrap, null, center, 0);
@@ -16,7 +15,7 @@
   &__title {
     text-align: center;
     font-size: 2.5rem;
-    font-family: var(--titular-font);
+    font-family: $PlayFairDisplay;
     text-transform: uppercase;
     margin: 2rem 0 3rem;
   }
@@ -29,7 +28,6 @@
     line-height: 2.4rem;
 
     a {
-      font-family: var(--principal-font);
       font-weight: 600;
       text-transform: uppercase;
 

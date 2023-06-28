@@ -9,6 +9,10 @@
     align-items: center;
     gap: 6rem;
 
+    @include mb() {
+      gap: 4rem;
+    }
+
     & a:nth-child(1) svg:hover {
       fill: rgb(147, 1, 1);
     }
