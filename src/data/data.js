@@ -1,42 +1,42 @@
 const ICONS = {
   github: {
-    svg: 'src/assets/rrss/svg/github.svg',
+    svg: 'src/public/assets/rrss/svg/github.svg',
     alt: 'github'
   },
   linkedin: {
-    svg: 'src/assets/rrss/svg/linkedin.svg',
+    svg: 'src/public/assets/rrss/svg/linkedin.svg',
     alt: 'linkedin'
   },
   whatsapp: {
-    svg: 'src/assets/rrss/svg/whatsapp.svg',
+    svg: 'src/public/assets/rrss/svg/whatsapp.svg',
     alt: 'whatsapp'
   },
   javascript: {
-    svg: 'src/assets/rrss/svg/javascript.svg',
+    svg: 'src/public/assets/rrss/svg/javascript.svg',
     alt: 'javascript'
   },
   react: {
-    svg: 'src/assets/rrss/svg/react.svg',
+    svg: 'src/public/assets/rrss/svg/react.svg',
     alt: 'react'
   },
   sass: {
-    svg: 'src/assets/rrss/svg/sass.svg',
+    svg: 'src/public/assets/rrss/svg/sass.svg',
     alt: 'sass'
   },
   html: {
-    svg: 'src/assets/rrss/svg/html5.svg',
+    svg: 'src/public/assets/rrss/svg/html5.svg',
     alt: 'html5'
   },
   css: {
-    svg: 'src/assets/rrss/svg/css3.svg',
+    svg: 'src/public/assets/rrss/svg/css3.svg',
     alt: 'css3'
   },
   bootstrap: {
-    svg: 'src/assets/rrss/svg/bootstrap.svg',
+    svg: 'src/public/assets/rrss/svg/bootstrap.svg',
     alt: 'bootstrap'
   },
   fire: {
-    svg: 'src/assets/rrss/svg/fire.svg',
+    svg: 'src/public/assets/rrss/svg/fire.svg',
     alt: 'fire'
   },
 }
@@ -47,7 +47,7 @@ export const data = {
     {
       id: 1,
       title: 'Tu Giffy',
-      img: '/src/assets/projects/tu-giffy.png',
+      img: 'src/public/assets/projects/tu-giffy.png',
       description: {
         text: 'Web buscador de gifs con register/login, función de añadir favoritos, clasificar por edad y revisar tendencias. Para esto me he servido de la API de Giphy. Algunas dependencias: React Helmet, Formik, Wouter.',
         icons: [
@@ -65,7 +65,7 @@ export const data = {
     {
       id: 2,
       title: 'El Tente',
-      img: 'src/assets/projects/el-tente.png',
+      img: 'src/public/assets/projects/el-tente.png',
       description: {
         text: 'Mi primer proyecto profesional para un cliente dedicado a una empresa de branding, fotografía, diseño y video. Contiene formulario manejado con Formik y enviado partir del servicio Email JS, React Helmet, Toastify, etc.',
         icons: [
@@ -81,7 +81,7 @@ export const data = {
     {
       id: 3,
       title: 'Tu Tabaco',
-      img: 'src/assets/projects/tu-tabaco.png',
+      img: 'src/public/assets/projects/tu-tabaco.png',
       description: {
         text: 'E-commerce tabaquería estilado con la librería Tailwind CSS. Contiene manejo de base de datos a partir de Firebase, carrito de compras, clasificación de mercadería, manejo de stock y más.',
         icons: [
@@ -99,7 +99,7 @@ export const data = {
     {
       id: 4,
       title: 'Open Drink Store',
-      img: 'src/assets/projects/open-drink-store.png',
+      img: 'src/public/assets/projects/open-drink-store.png',
       description: {
         text: 'E-commerce de bebidas realizado con HTML, CSS, Javascript Vanilla y LocalStorage para el guardado de datos. Contiene carrito de compras, posibilidad de eliminar productos del mismo, manejo de stock y demás característica.',
         icons: [
@@ -116,7 +116,7 @@ export const data = {
     {
       id: 5,
       title: 'Joyeria Gold',
-      img: '../src/assets/projects/joyeria-gold.png',
+      img: 'src/public/assets/projects/joyeria-gold.png',
       description: {
         text: 'Web estática de tienda de joyerías realizada con HTML y SASS. Fué mi primer proyecto como developer donde entendí que comenzaba la pasión.',
         icons: [

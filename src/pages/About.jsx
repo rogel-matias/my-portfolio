@@ -24,7 +24,7 @@ export default function About () {
           </p>
         </div>
         <div className='about__aside'>
-          <img className='about__image' src="src/assets/about/my-photo.png"/>
+          <img className='about__image' src="src/public/assets/about/my-photo.png"/>
           <button className='about__button'>MI CV</button>
         </div>
       </div>
