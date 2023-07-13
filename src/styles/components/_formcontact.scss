@@ -5,7 +5,7 @@
     width: 100%;
     max-width: 22rem;
     margin: 5rem 0 7rem;
-
+    animation-delay: 0.2s;
     font-size: 1.2rem;
 
     &__label {
@@ -24,7 +24,7 @@
       width: 95%;
       padding: .5rem;
       border: none;
-      border-bottom: 1px solid grey;
+      border-bottom: 1px solid $MainColor;
       text-align: center;
 
       &:focus-visible {
@@ -43,7 +43,7 @@
       max-height: 7rem;
       padding: .5rem;
       margin-top: 1rem;
-      border: 1px solid grey;
+      border: 1px solid $MainColor;
       text-align: center;
 
       &:focus-visible {
@@ -54,8 +54,8 @@
     &__button {
       width: 100%;
       padding: .5rem;
-      background-color: black;
-      color: #fcfcfc;
+      background-color: $MainColor;
+      color: $SecondaryColor;
       cursor: pointer;
 
       &:hover {

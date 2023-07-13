@@ -27,15 +27,3 @@
       @content;
   }
 }
-
-// @mixin ham( $min: 320px, $max: 690px) {
-//   @media (min-width: $min) and (max-width: $max) {
-//       @content;
-//   }
-// }
-
-// @mixin mbit( $min: 320px, $max: 768px) {
-//   @media (min-width: $min) and (max-width: $max) {
-//       @content;
-//   }
-// }

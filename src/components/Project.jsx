@@ -1,38 +1,30 @@
 import Github from '../assets/rrss/components/Github'
-import Fire from '../assets/rrss/components/Fire'
 
 /* eslint-disable react/prop-types */
 export default function Project ({ project }) {
   return (
     <article className='project'>
-      <img className="project__img" src={project.img} />
+      <img className="project__img" src={project.img.webp} alt={project.img.alt}/>
       <div className="project__underside">
-        <h3 className="project__title">{project.title}</h3>
-        <p className="project__paragraph">{project.description.text}</p>
+        <h3 className="project__underside-title">{project.title}</h3>
+        <p className="project__underside-paragraph">{project.description.text}</p>
         <div className="project__underside-container">
           <div className="project__underside-tech">
             <h4>Tecnologías</h4>
             <div>
             {
-              project.description.icons.map(icon => <img key={icon} src={icon.svg} alt={icon.alt} />)
+              project.description.icons.map(icon => <img key={icon} src={icon.svg} alt={icon.alt} title={icon.alt} />)
             }
             </div>
           </div>
           <div className="project__underside-button">
-            <button>
-              <Github 
-                width={18}
-                height={18}
-                />
-              Código
-            </button>
-            <button>
-              <Fire 
-                width={18}
-                height={18}
-              />
+            <a href={project.url.deploy} target='_blank' rel='noreferrer' title='Visitar deploy'>
               Deploy
-            </button>
+            </a>
+            <a href={project.url.github} target='_blank' rel='noreferrer' title='Visitar github'>
+              <Github width={18} height={18} />
+              Código
+            </a>
           </div>
         </div>
       </div>

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 export default function About () {
   return(
-    <section className="section about">
+    <section className="section about fadeIn">
       <h2 className="section__title">Sobre mi</h2>
-      <div className="about__container">
+      <div className="about__container ">
         <div className="about__text">
           <p>
             Mucho gusto! Tengo 27 años y soy de Entre Ríos, Argentina. 

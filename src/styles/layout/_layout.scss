@@ -1,23 +1,24 @@
 .wrapper {
-  background-color: #fcfcfc;
+  background-color: $SecondaryColor;
   width: 100%;
   min-height: 100vh;
   font-family: $Lato;
+  padding-top: 1.5rem;
 }
 
 .section {
   width: 88%;
-  min-height: 87vh;
-  margin: auto;
-
+  min-height: 86vh;
+  margin: 1rem auto 0;
   @include flex(column, nowrap, null, center, 0);
 
   &__title {
     text-align: center;
     font-size: 2.5rem;
     font-family: $PlayFairDisplay;
+    font-weight: 600;
     text-transform: uppercase;
-    margin: 2rem 0 3rem;
+    margin: 4rem 0 2rem;
   }
 
   &__paragraph {
@@ -37,4 +38,50 @@
       }
     }
   }
+}
+
+
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+/*// Animations //*/
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
 }

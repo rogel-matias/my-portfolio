@@ -14,37 +14,43 @@
     width: 100%;
   }
 
-  &__title {
-    font-size: 1.8rem;
-  }
-  
-  &__paragraph {
-    font-weight: 300;
-    padding: 0 5rem;
-  }
-
   &__underside {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(1rem);
     position: absolute;
     bottom: 0;
     left: 0;
-
     opacity: 0;
     transition: all 0.5s ease;
-
-    color: white;
+    color: $SecondaryColor;
     text-align: center;
-
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
     align-items: center;
+    @include mb() {
+      padding-bottom: 0.2rem;
+    }
 
     &:hover {
       opacity: 1;
+    }
+
+    &-title {
+      font-size: 1.8rem;
+      @include mb() {
+        font-size: 1.5rem;
+      }
+    }
+    
+    &-paragraph {
+      font-weight: 300;
+      padding: 0 5rem;
+      @include it() {
+        display: none;
+      }
     }
 
     &-container {
@@ -55,28 +61,37 @@
     }
 
     &-tech {
-      width: 55%;
-      
+      width: 55%;   
       display: flex;
       flex-flow: column nowrap;
-      justify-content: start;
       gap: 2rem;
+      @include mb() {
+        align-items: center;
+        gap: 0.5rem;
+      }
       
       & h4 {
         text-transform: uppercase;
+        @include mb() {
+          font-size: 0.75rem;
+        }
       }
       & div {
         width: 100%;
         background-color: rgba(254, 254, 254, 0.15);
-        
         padding: 2rem 0;
         border-radius: 0.5rem;
-        
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        
+        @include mb() {
+          padding: 1rem;
+          flex-flow: row nowrap;
+          overflow-x: scroll;
+        }
       }
 
       & img {
@@ -89,28 +104,34 @@
       flex-flow: column wrap;
       justify-content: flex-end;
       align-items: center;
-      gap: 20px;
+      gap: 1.3rem;
+      @include mb() {
+        gap: 0.6rem;
+      }
       
-      & button {
+      & a {
+        width: 5rem;
         background-color: red;
-
+        border: none;
         border-radius: 10px;
         padding: 0.9rem 1.5rem;
-        color: black;
+        color: $MainColor;
         text-transform: uppercase;
         font-size: 0.8rem;
         font-weight: 800;
-
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5rem;
+        @include flex(row, nowrap, center, center, 0.4rem);
+        @include mb() {
+          width: 5rem;
+          font-size: 0.7rem;
+        }
 
         & svg {
           width: fit-content;
           text-align: center;
           fill: black;
+          @include mb() {
+            display: none;
+          }
         }
       }
     }
