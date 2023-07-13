@@ -1,5 +1,6 @@
 .contact{
   align-items: center;
+  overflow: hidden;
 
   & .form {
     width: 100%;
@@ -11,6 +12,7 @@
     &__label {
       width: 100%;
       margin: 1rem 0;
+      
       
       @include flex(column, nowrap, null, center, 0);
 
@@ -26,6 +28,7 @@
       border: none;
       border-bottom: 1px solid $MainColor;
       text-align: center;
+      mix-blend-mode: difference;
 
       &:focus-visible {
         outline: none;
