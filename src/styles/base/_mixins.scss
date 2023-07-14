@@ -10,20 +10,27 @@
 
 /*/// Mixins responsive ///*/
 
-@mixin dp($max: 1260px) {
-  @media (max-width: $max) {
+@mixin dp( $min: 768px, $max: 1260px) {
+  @media (min-width: $min) and (max-width: $max) {
       @content;
   }
 }
 
-@mixin it( $max: 768px) {
-  @media (max-width: $max) {
+@mixin it( $min: 320px, $max: 768px) {
+  @media (min-width: $min) and (max-width: $max) {
       @content;
   }
 }
 
-@mixin mb($max: 480px) {
-  @media (max-width: $max) {
+@mixin mb( $min: 320px, $max: 480px) {
+  @media (min-width: $min) and (max-width: $max) {
       @content;
   }
 }
+
+@mixin ham( $min: 320px, $max: 690px) {
+  @media (min-width: $min) and (max-width: $max) {
+      @content;
+  }
+}
+

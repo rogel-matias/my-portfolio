@@ -38,6 +38,12 @@
       font-size: 7.5vw;
       margin-bottom: 7vw;
     }
+
+    @include it() {
+      animation: subtitleResponsive 40s infinite linear;
+      font-size: 7.5vw;
+      margin-bottom: 7vw;
+    }
   }
 
   &__ul {

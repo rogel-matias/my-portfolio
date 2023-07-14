@@ -45,13 +45,6 @@ export default function AnimateBackground () {
       );
     });
 
-    return () => {
-      // Realiza cualquier limpieza necesaria cuando el componente se desmonte
-      // Por ejemplo, puedes eliminar los elementos creados en el DOM
-      balls.forEach((ball) => {
-        ball.remove();
-      });
-    };
   }, []);
 
   return <div ref={ballsContainer} className="fondo-animado"></div>;
