@@ -1,35 +1,35 @@
-import { useState } from "react"
+import { useNavigate } from 'react-router-dom';
+import emailjs from '@emailjs/browser'
 
 export default function FormContact () {
-  const [form, setForm] = useState({
-    nameForm: '',
-    email: '',
-    message: ''
-  })
+  const navigate = useNavigate()
 
   const handleSubmit = evt => {
     evt.preventDefault()
+    emailjs.sendForm('service_sv0jp89', 'template_n20mq6l', evt.target, 'WKkILWfxeVGkx-IlY')
+      .then(res => {
+        if(res.text === 'OK') {
+          setTimeout(() => {
+            navigate('/')
+          }, 2000)
+        }
+      })
+      .catch(err => console.log(err.text))
   }
 
-  const handleChange = evt => {
-    const { name, value } = evt.target
-    setForm((prevForm) => ({
-      ...prevForm,
-      [name]: value
-    }));
-  };
+
 
   return (
     <form className='form fadeInUp' onSubmit={handleSubmit} >
       <label className="form__label">
-        <input className="form__input" autoComplete="off" name='nameForm' value={form.nameForm} onChange={handleChange} type='text' placeholder='Nombre'/>
+        <input className="form__input" autoComplete="off" name='user'  type='text' placeholder='Nombre'/>
       </label>
       <label className="form__label">
-        <input className="form__input" autoComplete="off" name='email' value={form.email} onChange={handleChange} type='email' placeholder='Email'/>
+        <input className="form__input" autoComplete="off" name='email' type='email' placeholder='Email'/>
       </label>
       <label className="form__label">
         <span>Mensaje</span>
-        <textarea className="form__textarea" autoComplete="off" name='message' value={form.message} onChange={handleChange} placeholder='¿En qué puedo ayudarte?'/>
+        <textarea className="form__textarea" autoComplete="off" name='message' placeholder='¿En qué puedo ayudarte?'/>
       </label>
       <button className="form__button">Enviar</button>
     </form>
